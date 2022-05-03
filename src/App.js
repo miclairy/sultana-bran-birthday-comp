@@ -1,4 +1,7 @@
 import logo from './sultanabranvector.png';
+import socks from './sultanaBranSocks.jpg';
+import tshirt from './sultanaBranTshirt.jpg';
+import box from './sultanabranbox.png';
 import './App.css';
 import React, { useState } from 'react';
 
@@ -17,6 +20,12 @@ const PRIZES = [
   'a free box of Sultana Bran',
 ]
 
+const PRIZEIMAGES = [
+  socks,
+  tshirt,
+  box
+]
+
 function App() {
 
   let [code, setCode] = useState('');
@@ -31,7 +40,7 @@ function App() {
     <div className="App">
       {entered === false && <div>
         <div className='banner'>
-          <img src={logo} className="header-image" alt="logo" />
+          <img src={logo} className="header-image" alt="sultana bran" />
         </div>
         <div>
           <div className='validateText'>
@@ -42,7 +51,7 @@ function App() {
             </div>
             <input className='text' type="text" value={code} onChange={(event) => setCode(event.target.value)}></input>
           </div>
-          <button className='enter' onClick={redemCode}>ENTER</button>
+          <button className='enter largeButton' onClick={redemCode}>ENTER</button>
         </div>
       </div>
       }
@@ -54,14 +63,30 @@ function App() {
 function Prize(props) {
   const codeNumber = CODES.indexOf(props.code);
   console.log(props['code'], codeNumber)
-  let won = codeNumber > -1 && codeNumber < (PRIZES.length - 1);
+  let won = codeNumber > -1 && codeNumber < PRIZES.length;
 
   return (
     <div>
       {won ? <div>
+        <div className='banner'>
+        <img src={PRIZEIMAGES[codeNumber]} className="header-image" alt={PRIZES[codeNumber]} />
+        </div>
         <h2>You have won {PRIZES[codeNumber]}</h2>
+        <div className='validateText'>
+          <label> Name: 
+            <input></input>
+          </label>
+        </div>
+        <div className='validateText'>
+          <label> Address: 
+            <input></input>
+          </label>
+        </div>
+        <div>
+            <input className='enter' type='submit' value='Receive your prize' onClick={() => alert("Proably should ask Claire for your birthday prize") }></input>
+        </div>
       </div> : <div>
-        <h2>Better luck next time. </h2>
+        <h2>Better luck next time.</h2>
       </div>
       }
     </div>

@@ -53,6 +53,9 @@ body {
   box-shadow: none;
   border-radius: 5px;
   font-size: x-large;
+}
+
+.largeButton {
   padding: 2px 95px 2px 95px;
 }
 
