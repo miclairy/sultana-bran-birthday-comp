@@ -1,3 +1,4 @@
+import logo from './sultanabranvector.png';
 import './App.css';
 import React, { useState } from 'react';
 
@@ -29,12 +30,22 @@ function App() {
   return (
     <div className="App">
       {entered === false && <div>
-        <label>
-          Enter your code:
-        <input type="text" value={code} onChange={(event) => setCode(event.target.value)}></input>
-        </label>
-        <button onClick={redemCode}>Enter</button>
-      </div>}
+        <div className='banner'>
+          <img src={logo} className="header-image" alt="logo" />
+        </div>
+        <div>
+          <div className='validateText'>
+            <div className='validateText'>
+              <label className='text'>
+              Validate your code:
+              </label>
+            </div>
+            <input className='text' type="text" value={code} onChange={(event) => setCode(event.target.value)}></input>
+          </div>
+          <button className='enter' onClick={redemCode}>ENTER</button>
+        </div>
+      </div>
+      }
       {entered === true && <Prize code={code}/>}
     </div>
   );
