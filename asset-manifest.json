@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/sultana-bran-birthday-comp/static/css/main.b653af47.css",
-    "main.js": "/sultana-bran-birthday-comp/static/js/main.cef078bd.js",
+    "main.js": "/sultana-bran-birthday-comp/static/js/main.b5ec04e1.js",
     "static/js/787.a9e9064f.chunk.js": "/sultana-bran-birthday-comp/static/js/787.a9e9064f.chunk.js",
     "static/media/sultanabranvector.png": "/sultana-bran-birthday-comp/static/media/sultanabranvector.f6f45edc8b849ffced9d.png",
     "static/media/sultanaBranSocks.jpg": "/sultana-bran-birthday-comp/static/media/sultanaBranSocks.99c298fbf0162153f389.jpg",
-    "static/media/sultanabranbox.png": "/sultana-bran-birthday-comp/static/media/sultanabranbox.dbad3fa9a924875959b5.png",
+    "static/media/allsultanaandallbran.png": "/sultana-bran-birthday-comp/static/media/allsultanaandallbran.a37fa659717fda39aab2.png",
+    "static/media/branandsultana.png": "/sultana-bran-birthday-comp/static/media/branandsultana.2185c812f8627a4780d0.png",
     "static/media/sultanaBranTshirt.jpg": "/sultana-bran-birthday-comp/static/media/sultanaBranTshirt.08cbf5b34f00e20bc80c.jpg",
     "index.html": "/sultana-bran-birthday-comp/index.html",
     "main.b653af47.css.map": "/sultana-bran-birthday-comp/static/css/main.b653af47.css.map",
-    "main.cef078bd.js.map": "/sultana-bran-birthday-comp/static/js/main.cef078bd.js.map",
+    "main.b5ec04e1.js.map": "/sultana-bran-birthday-comp/static/js/main.b5ec04e1.js.map",
     "787.a9e9064f.chunk.js.map": "/sultana-bran-birthday-comp/static/js/787.a9e9064f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b653af47.css",
-    "static/js/main.cef078bd.js"
+    "static/js/main.b5ec04e1.js"
   ]
 }
