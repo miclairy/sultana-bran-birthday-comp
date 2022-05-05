@@ -1,7 +1,8 @@
 import logo from './sultanabranvector.png';
 import socks from './sultanaBranSocks.jpg';
 import tshirt from './sultanaBranTshirt.jpg';
-import box from './sultanabranbox.png';
+import box from './branandsultana.png';
+import branflakesandSultana from './allsultanaandallbran.png'
 import './App.css';
 import React, { useState } from 'react';
 
@@ -17,13 +18,15 @@ const CODES = [
 const PRIZES = [
   'Sultana Bran Socks',
   'a Sultana Bran t-shirt',
-  'a free box of Sultana Bran',
+  'a free box of Bran and Sultana (budget constraints)',
+  'all sultanas and all bran, never the two shall meet'
 ]
 
 const PRIZEIMAGES = [
   socks,
   tshirt,
-  box
+  box,
+  branflakesandSultana
 ]
 
 function App() {
